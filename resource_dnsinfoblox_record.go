@@ -27,6 +27,7 @@ func resourceDNSInfobloxRecordCreate(d *schema.ResourceData, meta interface{}) e
 
 
 func resourceDNSInfobloxRecordRead(d *schema.ResourceData, meta interface{}) error {
+	client := meta.(*infoblox.Client)
 	return nil
 }
 
