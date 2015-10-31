@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/emdem/go-infoblox"
+	infoblox "github.com/emdem/go-infoblox"
 )
 
 type Config struct {
@@ -15,7 +15,7 @@ type Config struct {
 
 //Client returns a new client for accessing dnsinfoblox
 func(c *Config) Client() (*dns-infoblox.Client, error) {
-	client, err := dns-infoblox.NewClient(c.User, c.Password, c.Url)
+	client, err := infoblox.NewClient(c.Url, c.User, c.Password, false, false)
 
 	if err != nil {
 		return nil, fmt.Errorf("Error setting up client: %s", err)
