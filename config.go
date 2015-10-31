@@ -1,4 +1,4 @@
-package dns-infoblox
+package dnsinfoblox
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ type Config struct {
 }
 
 //Client returns a new client for accessing dnsinfoblox
-func(c *Config) Client() (*dns-infoblox.Client, error) {
+func(c *Config) Client() (*dnsinfoblox.Client, error) {
 	client, err := infoblox.NewClient(c.Url, c.User, c.Password, false, false)
 
 	if err != nil {

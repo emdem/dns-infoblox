@@ -1,4 +1,4 @@
-package dns-infoblox
+package dnsinfoblox
 
 import (
 	"fmt"
