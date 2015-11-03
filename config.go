@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	infoblox "github.com/emdem/go-infoblox"
+	infoblox "github.com/fanatic/go-infoblox"
 )
 
 type Config struct {

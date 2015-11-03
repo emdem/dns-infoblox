@@ -30,7 +30,7 @@ func resourceDNSInfobloxRecordRead(d *schema.ResourceData, meta interface{}) err
 	client := meta.(*infoblox.Client)
 	rec, err := client.FindRecordA(d.Get("name").(string), d.Id())
 	if err != nil {
-		return fmt.Errorf(Couldn't find infoblox record: %s", err)
+		return fmt.Errorf("Couldn't find infoblox record: %s", err)
 	}
 
 
