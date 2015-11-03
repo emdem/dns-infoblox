@@ -5,7 +5,7 @@ import (
 	"log"
 
 	"github.com/hashicorp/terraform/helper/schema"
-	infoblox "github.com/emdem/go-infoblox"
+	infoblox "github.com/fanatic/go-infoblox"
 )
 
 func resourceDNSInfobloxRecord() *schema.Resource {
